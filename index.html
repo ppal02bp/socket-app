@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="/css/chat.css" />
+  </head>
+  <body>
+    <div class="chatbox-holder">
+      <div class="chatbox">
+        <div class="chatbox-top">
+          <div class="chatbox-avatar">
+            <img src="/images/avatar.png" />
+          </div>
+          <div class="chat-partner-name">
+            <span class="join-users"></span>
+            <span id="invite-link"></span>
+          </div>
+        </div>
+        <form id="user_form">
+          <div class="chat-input-holder">
+            <input type="text" class="chat-input" id="user-name" />
+            <input type="submit" value="Login" class="message-send" />
+          </div>
+        </form>
+        <form id="chat_form">
+          <div class="chat-messages"></div>
+          <div class="chat-input-holder">
+            <input type="text" class="chat-input" id="msg" />
+            <input type="submit" value="Send" class="message-send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+  </body>
+</html>
